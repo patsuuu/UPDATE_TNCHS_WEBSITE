@@ -1,0 +1,19 @@
+
+
+.event-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.event-images div {
+    text-align: center;
+}
+
+.event-images img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+

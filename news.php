@@ -1,0 +1,574 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .slideshow {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 300px;
+        }
+    
+        .slideshow img {
+          width: 300px;
+          height: 300px;
+        }
+    .slideshows {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 300px;
+    }
+
+    .slideshows img {
+      width: 300px;
+      height: 300px;
+    }
+    .slideshowss {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 300px;
+    }
+
+    .slideshowss img {
+        margin-top: 210px;
+      width: 300px;
+      height: 300px;
+    }
+    .una{
+            margin-top: -350px;
+            color: black;
+        }   
+        .una p{
+          
+            color: black;
+        }   
+
+
+
+
+
+
+
+
+
+
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        .containers {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+      
+        .section {
+            margin-bottom: 40px;
+            animation: slideUp 0.5s ease-in-out;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        p, ul {
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #eee;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 4px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        ul li:hover {
+            transform: scale(1.05);
+            background-color: #ddd;
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+        .slide-up {
+            transform: translateY(20px);
+            opacity: 0;
+            animation: slideUp 0.5s forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideUp {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+       
+      </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity</title>
+    <link rel="stylesheet" href="ek.css">
+</head>
+<body>
+    
+    <div class="navbar-links">
+        
+        <section id="home">
+    
+
+  
+            <header>
+                <div class="huh">
+                    <nav>
+                   
+                </div>
+                </nav>
+                
+                <div class="logsi">
+                   
+                    <img src="./potos.png" id="leftCloud" alt="">
+                <a href="#home" class="logsi"></a>
+            </div>
+            <div class="logsu">
+            <img src="./potos.png" id="mainCloud" alt="">
+            </div>
+                <div class="logs">
+                <a href="#home" class="logo"></a>
+            </div>
+           
+            <div class="head">
+                <div class="hev">
+                <nav>
+                    <div class="dropdowns">
+                        <div class="p">
+                          <button class="dropbtns"><a href="index.html#home">HOME</a>
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                          <div class="dropdowns-content">
+                            <div class="dropdowns-content-sub">
+                                <a href="#">STUDENTS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></a>
+                                 
+                                <div class="dropdowns-content-sub-sub">
+                                  
+                                 
+                              <div class="dropdowns-content-subs">
+                                    <a href="index.html#cors">STRANDS</a>
+                                   
+                                  
+                                </div>
+        
+                                
+                                <div class="dropdowns-content-subss">
+                                <a href="logun.php">REGISTRATION</a>
+                                <a href="faketextbook.php">ORDER TEXTBOOKS </a>
+                                
+                                    
+                                
+                                
+                                  </div>
+                            </div>
+                              </div>
+                            </a>
+                            
+                            
+                            
+                            <a href="alumni.html">ALUMNI</a>
+                            <a href="visit.html">VISIT</a>
+                            
+                              <div class="dropdowns-content-sub">
+                                <a href="#">ACADEMICS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></a>
+                                 
+                                <div class="dropdowns-content-sub-sub">
+                                  
+                                 
+                              <div class="dropdowns-content-subs">
+                                    <a href="acads.html">ACADEMIC DEPARTMENTS</a>
+                                   
+                                  
+                                </div>
+        
+                                
+                                <div class="dropdowns-content-subss">
+                          
+                                <div class="dropdowns-content-sub-subss">
+                                    
+                                   
+                                    
+                                
+                                </div>   
+                                  </div>
+                            </div>
+                              </div>
+                            </a>
+                            
+                            <a href="studentlife.html">STUDENT LIFE</a>
+                            <a href="about.html">ABOUT US</a>
+                          </div>
+                        </div> 
+                      </div>
+        
+        
+          
+          <div class="dropdown">
+            <div class="p">
+        
+        <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+        <a href="index.html#cors">STRANDS</a>
+        <a href="logun.php">REGISTRATION</a>
+        <a href="logun.php">ORDER TEXTBOOKS</a>
+        </div>
+        </div> 
+        </div>
+               
+                    
+                   
+                   <a href="p.html">PARENTS<span></span></a> 
+                   <a href="apply.php">APPLY<span></span></a> 
+                   <a href="news.php">NEWS<span></span></a> 
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="loglog.php"><h1>LOGIN</h1><span></span></a> 
+                  
+                   
+                </div>
+                </nav>
+                
+        </div>
+        </div>
+                </div>
+                
+                </div>
+              
+            </header>
+</section>
+
+    <section id="Home">
+       
+        <h1>NEWS</h1>
+        <!-- Clouds -->
+        <img src="./" id="leftCloud" alt="">
+        <img src="./" id="mainCloud" alt="">
+        <img src="./" id="rightCloud" alt="">
+        <!-- Background -->
+        <img src="./" id="Mountain1" alt="">
+        <img src="./" id="Mountain2" alt="">
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section id="students">
+        <section class="section section-light">
+            
+        
+            
+    
+                   
+                     
+            
+                       
+            
+            <div class="una">
+                
+            </head>
+            <body>
+            
+                <main>
+                    <section id="news-articles">
+                        
+                    </section>
+                </main>
+              
+            
+                <div id="news-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2 id="modal-title"></h2>
+                        <img id="modal-image" src="" alt="News Image">
+                        <p id="modal-content"></p>
+                        <small id="modal-date"></small>
+                    </div>
+                </div>
+            
+            
+               
+               
+        </div>
+                    
+            
+                           
+            
+                           
+                       
+                  
+    
+    
+    
+                      
+            
+                           
+                             
+                    
+                               
+                    
+                    
+                    
+                    
+                    
+                                  
+       
+                    
+                                   
+                       
+                
+        
+                       
+                         
+                
+                           
+                
+                
+                
+                
+                                   </div>
+                               
+                
+                               
+                            <br><br><br><br>
+                            </section></section></div>
+                
+                
+                
+                              
+                      
+                    </div> 
+                </div>
+                
+                
+                
+                
+                                   </div>
+                               
+                
+                               
+                           
+                            </section>
+        
+        
+        
+                          
+                
+                               
+                                 
+                        
+                                   
+                        
+                        
+                        
+                        
+                        
+                                      
+           
+                        
+                                       
+                                   
+                                    </section>
+                        
+                           
+                                        
+                    <div class="">
+                       
+                        <div class="ptext">
+                        <span class="border trans">
+                            
+                        </span>
+                        </div>
+                        </div>
+
+
+
+
+
+
+
+         
+                        
+                            <div class="pimg4">
+                               
+                                
+        
+                                </div>
+                                </div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                
+                                <div class="dulo">
+
+
+
+
+                                   
+                                           
+                                                        
+                                 
+                                                        
+
+
+
+
+                                    
+
+
+
+                                <section id="contact">    
+                                    <div class="edulogo">            
+                                    <img src="ed.png" width="120" height="120">
+                            </div>
+                        </div>  
+                                </div>
+                                    </section></section>
+
+
+
+                                                
+                         
+                                        
+                                    <script src="newsjs.js"></script>                          
+    <script src="main.js"></script>
+    <script>
+        
+                    function blinkTabTitle(title1, title2, interval) {
+                        let showingTitle1 = true;
+                        setInterval(() => {
+                            document.title = showingTitle1 ? title1 : title2;
+                            showingTitle1 = !showingTitle1;
+                        }, interval);
+                    }
+            
+                    function receiveNotification() {
+                        blinkTabTitle("NEWS", "TNCHS", 1000);
+                    }
+            
+                    setTimeout(receiveNotification, 5000);
+                </script>
+    <script>
+        const images = ['a.jpg', 'b.jpg', 'c.jpg', 'd.jpg' ,'e.jpg', 'f.jpg' ];
+         let currentIndex = 0;
+     
+         const previousBtn = document.getElementById('previousBtn');
+         const nextBtn = document.getElementById('nextBtn');
+         const image = document.getElementById('image');
+     
+         previousBtn.addEventListener('click', () => {
+           currentIndex = (currentIndex - 1 + images.length) % images.length;
+           image.src = images[currentIndex];
+         });
+     
+         nextBtn.addEventListener('click', () => {
+           currentIndex = (currentIndex + 1) % images.length;
+           image.src = images[currentIndex];
+         });
+       </script>
+
+
+
+
+<script>
+    const imageys = ['he.png', 'hi.png', 'ho.png', 'hu.png', 'ah.png'];
+    let currentIndexx = 0;
+    const previousBtns = document.getElementById('previousBtns');
+    const nextBtns = document.getElementById('nextBtns');
+    const imagey = document.getElementById('imagey');
+
+    previousBtns.addEventListener('click', () => {
+        currentIndexx = (currentIndexx - 1 + imageys.length) % imageys.length;
+        imagey.src = imageys[currentIndexx];
+    });
+
+    nextBtns.addEventListener('click', () => {
+        currentIndexx = (currentIndexx + 1) % imageys.length;
+        imagey.src = imageys[currentIndexx];
+    });
+</script>
+
+
+
+
+<script>
+    const imageyss = ['pp.jpg', 'potos.png', 'poto.png'];
+    let currentIndexxx = 0;
+    const previousBtnss = document.getElementById('previousBtnss');
+    const nextBtnss = document.getElementById('nextBtnss');
+    const imageyy = document.getElementById('imageyy');
+
+    previousBtnss.addEventListener('click', () => {
+        currentIndexxx = (currentIndexxx - 1 + imageyss.length) % imageyss.length;
+        imageyy.src = imageys[currentIndexxx];
+    });
+
+    nextBtnss.addEventListener('click', () => {
+        currentIndexxx = (currentIndexxx + 1) % imageyss.length;
+        imageyy.src = imageyss[currentIndexxx];
+    });
+</script>
+
+
+
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+    <footer>
+        <div class="mid">
+            <div class="midtext"><center><marquee direction=right>   WELCOME TO TANZA NATIONAL COMPREHENSIVE HIGH SCHOOL &#149 WELCOME TO TANZA NATIONAL COMPREHENSIVE HIGH SCHOOL &#149 WELCOME TO TANZA NATIONAL COMPREHENSIVE HIGH SCHOOL &#149 WELCOME TO TANZA NATIONAL COMPREHENSIVE HIGH SCHOOL &#149 WELCOME TO TANZA NATIONAL COMPREHENSIVE HIGH SCHOOL</marquee></center></div> 
+          </div>
+    </footer>
+    
+</body>
+
+</html>

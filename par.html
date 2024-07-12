@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parental Feedback</title>
+    <link rel="stylesheet" href="Pstyles.css">
+</head>
+<body>
+    <h1>Parental Feedback</h1>
+    <form id="commentForm">
+        <input type="text" id="username" placeholder="Enter your name" required><br>
+        <textarea id="commentText" rows="4" placeholder="Enter your feedback here" required></textarea><br>
+        <button type="submit" class="green-button">Submit</button>
+    </form>
+    <a href="alumni.html" class="green-button">Back</a> <!-- dito mo link href tols -->
+    <div id="comments"></div>
+    <script>
+        document.getElementById('commentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let username = document.getElementById('username').value;
+            let commentText = document.getElementById('commentText').value;
+            let date = new Date().toLocaleString();
+            if (username.trim() && commentText.trim()) {
+                saveComment(username, commentText, date);
+                document.getElementById('username').value = '';
+                document.getElementById('commentText').value = '';
+                displayComments();
+            }
+        });
+
+        function saveComment(username, comment, date) {
+            let comments = JSON.parse(localStorage.getItem('comments')) || [];
+            comments.push({username, comment, date});
+            localStorage.setItem('comments', JSON.stringify(comments));
+        }
+
+        function displayComments() {
+            let commentsDiv = document.getElementById('comments');
+            commentsDiv.innerHTML = '';
+            let comments = JSON.parse(localStorage.getItem('comments')) || [];
+            comments.forEach(({username, comment, date}) => {
+                let commentDiv = document.createElement('div');
+                commentDiv.className = 'comment';
+                commentDiv.innerHTML = `<strong>${username}</strong> (${date}): ${comment}`;
+                commentsDiv.appendChild(commentDiv);
+            });
+        }
+
+        window.onload = displayComments;
+    </script>
+</body>
+</html>
